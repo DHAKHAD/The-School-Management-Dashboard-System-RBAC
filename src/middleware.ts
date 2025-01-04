@@ -1,5 +1,5 @@
 import { clerkMiddleware, createRouteMatcher } from "@clerk/nextjs/server";
-import { routeAccessMap } from "lib/settings";
+import { routeAccessMap } from ".lib/settings";
 import { NextResponse } from "next/server";
 
 const matchers = Object.keys(routeAccessMap).map((route) => ({
